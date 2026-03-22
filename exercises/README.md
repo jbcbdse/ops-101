@@ -12,9 +12,11 @@ For later, smaller, incremental changes, use `agent` mode.
 
 If you want to ask Claude questions without it taking action use `ask` mode.
 
-Create `rules` in Cursor for instructions that you always want to be present.
+Create `rules` in Cursor for instructions that you always want to be present. Rules live in `.cursor/rules/` and are automatically included in every conversation.
 
-Create `skills` in Cursor or Claude Code for very long instructions that should only be read into context when they are relevant. A skill should have a short description but may have hundreds of lines of instructions for Claude to execute to perform an action.
+For project-specific instructions that should travel with the repository, create a `RULES.md` or `.cursorrules` file at the root of the project. This is the right place for things like "use vitest, not jest" or "always use the App Router" — conventions that any contributor (human or AI) should follow when working in that repo.
+
+Create `skills` in Cursor or Claude Code for very long instructions that should only be read into context when they are relevant. A skill should have a short description but may have hundreds of lines of instructions for Claude to execute to perform an action. Skills are best for reusable procedures that span multiple projects (e.g., "create a PR," "set up a new service").
 
 Install the AWS CLI and the `gh` (GitHub) CLI. Both of these are essential tools that you will use throughout these exercises. Claude can use these CLIs directly, so having them installed means your AI assistant can execute AWS and GitHub operations on your behalf. You may want a `rule` to tell the LLM it is installed.
 
