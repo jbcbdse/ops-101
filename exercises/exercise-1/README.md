@@ -1,4 +1,4 @@
-# Exercise 1
+# Exercise 1: Guestbook app in local development
 
 Create a Next.js application that writes data to a DynamoDB database.
 
@@ -40,7 +40,7 @@ When configuring the application for local development:
 * Use the backend (api routes) for communication with DynamoDB
 * Ensure that there is at least some test coverage for the back end
 * Set up a `.gitignore` that excludes `node_modules`, `.env` files, and other generated artifacts
-* 
+* Create `scripts` in package.json for routine operations. Create `docker:up` and `docker:down` scripts to start and stop the compose stack.
 
 ### Git repository
 
