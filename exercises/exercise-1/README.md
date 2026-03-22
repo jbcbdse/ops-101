@@ -35,11 +35,12 @@ When configuring the application for local development:
 
 * Use `.env` files to configure the DynamoDB endpoint (e.g., `http://localhost:8000` for local development). Prefer `.env` files over exporting variables in your shell — they are portable, self-documenting, and easy for other developers (and CI) to replicate
 * Use the modern, "strict" and "stylistic" rules for `eslint`
-* Use jest for unit tests
+* Use vitest for unit tests
 * Ensure that there is at least some test coverage for the front end
 * Use the backend (api routes) for communication with DynamoDB
 * Ensure that there is at least some test coverage for the back end
 * Set up a `.gitignore` that excludes `node_modules`, `.env` files, and other generated artifacts
+* 
 
 ### Git repository
 
