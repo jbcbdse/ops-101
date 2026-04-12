@@ -1,0 +1,36 @@
+---
+description: Style guide for writing ops-101 exercises
+globs: exercises/**/README.md
+alwaysApply: false
+---
+
+# Exercise Writing Style
+
+These exercises are written for a junior engineer by a senior mentor. Follow these conventions:
+
+## Structure (in order)
+
+1. `# Exercise N: [Descriptive Title]` — top-level heading
+2. **Opening paragraph** — 1-3 sentences setting context. Explain *why* this matters, not just what we're doing. Conversational but not chatty.
+3. `## Key objectives` — 3-5 bullet points, high-level skills the student will gain
+4. `## Requirements` — the bulk of the exercise, broken into `###` subsections. Each section tells the student *what* to do and *why*. Mix imperative instructions with explanatory context.
+5. `## Key Takeaways` — bullet list with **bolded term** + colon + one-sentence explanation
+6. `## Next steps` — 1-2 sentences teasing the next exercise
+7. `## Questions you should be able to answer` — organized by topic under `###` subheadings. Mix conceptual ("what is X?") with practical ("write a query that...") and scenario-based ("what happens if...?") questions.
+
+## Tone
+
+- Direct, practical, mentor-to-junior-engineer voice
+- Use "we" for shared goals, "you" for student tasks
+- Bold key terms on first meaningful mention (e.g., **Pino**, **SNS topic**)
+- Parenthetical hints and asides are encouraged (e.g., "Hint: ...", "This is a one-time manual step.")
+- Call out real-world context: "In production you would..." or "In real-world scenarios..."
+- Mention cost implications where relevant
+- Never condescend; assume the student is smart but new to ops
+
+## Formatting
+
+- Use standard markdown tables where comparison is useful (e.g., log levels)
+- Use fenced code blocks with language tags for example code/queries
+- Keep paragraphs short — prefer 2-4 sentences
+- Subsections under Requirements should each stand alone as a coherent unit of work

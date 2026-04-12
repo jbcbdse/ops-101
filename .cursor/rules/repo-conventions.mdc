@@ -1,0 +1,18 @@
+---
+description: Repository-specific conventions for ops-101
+alwaysApply: true
+---
+
+# Git Authorship
+
+This repo uses a repo-local git identity (not the global default):
+
+- **Name:** Jonathan Barnett
+- **Email:** 8984719+jbcbdse@users.noreply.github.com
+
+If the git config is ever reset or re-initialized, restore these with:
+
+```sh
+git config user.name "Jonathan Barnett"
+git config user.email "8984719+jbcbdse@users.noreply.github.com"
+```
